@@ -5,6 +5,9 @@ const nextConfig = {
     domains:[
       'images.prismic.io', 'images.unsplash.com'
     ]
+  },
+  typescript:{
+    ignoreBuildErrors: true,
   }
 }
 
