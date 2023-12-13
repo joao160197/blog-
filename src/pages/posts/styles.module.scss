@@ -1,0 +1,77 @@
+.PostContainer{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.Posts{
+    max-width: 720px;
+    margin: 5rem auto;
+
+    a{
+        display: block;
+       
+        & + a{
+          margin-top: 2rem;
+          padding-top: 2rem;
+        }
+      time{
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        color: var(--grey-200) ;
+      }
+
+      img{
+        max-width: 100%;
+        max-height:410px;
+        border: 2px solid var(--blue-900);
+        border-radius: 7px;
+        border-image: linear-gradient(95deg,#1fa4e5, transparent) 1;
+      }
+
+      strong{
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--white);
+        margin: 1rem 0;
+        line-height: 2rem;
+        transition: color 0.3s;
+      }
+
+      p{
+        color: var(--white);
+        line-height: 2rem;
+        font-weight: lighter;
+        padding: 20px 0;
+      }
+
+      &:hover strong{
+        color: var(--purple); 
+      }
+        
+    }
+}
+
+.navigateButtons{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+div{
+  display: flex;
+  flex-direction: row;
+}
+
+
+  .FirstButton, .SecondButton{
+    background-color: transparent;
+    border: none;
+    margin-left: -20px;
+    padding: 0 15px;
+    }
+}
+
