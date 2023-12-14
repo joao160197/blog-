@@ -6,9 +6,9 @@ const nextConfig = {
       'images.prismic.io', 'images.unsplash.com'
     ]
   },
-  typescript:{
-    ignoreBuildErrors: true,
-  }
+  // typescript:{
+  //   ignoreBuildErrors: true,
+  // }
 }
 
 module.exports = nextConfig
