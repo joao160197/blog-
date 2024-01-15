@@ -20,7 +20,7 @@ export function Header() {
           <Link href="/posts"><p className={pathname === '/posts' ? 'active': ''}>Conteúdo</p></Link>
           <Link href="/about"><p className={pathname === '/about' ? 'active': ''}>Sobre</p></Link>
         </nav>
-        <a className={styles.ButtonHeader} href="https://jpinformaticablog.com" type="button">Começar</a>
+        <a className={styles.ButtonHeader} href="https://www.youtube.com" type="button">Começar</a>
       </div>
     </header>
   );
