@@ -64,14 +64,14 @@ export const getServerSideProps: GetServerSideProps = async ({
     title: RichText.asText(response.data.title),
     description: RichText.asHtml(response.data.description),
     cover: response.data.cover.url,
-    updatedAt: new Date(response.last_publication_date).toLocaleDateString(
+    updatedAt: response.last_publication_date ? new Date(response.last_publication_date).toLocaleDateString(
       "pt-BR",
       {
         day: "2-digit",
         month: "long",
         year: "numeric",
       }
-    ),
+    ): ""
   };
 
   return {
