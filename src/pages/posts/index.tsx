@@ -30,7 +30,7 @@ export default function Posts({ posts, page, totalPage }: PostsProps) {
   
 //buscar novos posts
 async function reqPost(pageNumber:number) {
-  const prismic = getPrismicClient();
+  const prismic = getPrismicClient(undefined);
 
   const response = await prismic.query([
     Prismic.Predicates.at('document.type', 'post')
@@ -144,7 +144,7 @@ async function reqPost(pageNumber:number) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const prismic = getPrismicClient();
+  const prismic = getPrismicClient(undefined);
 
   const response = await prismic.query(
     [Prismic.Predicates.at("document.type", "post")],

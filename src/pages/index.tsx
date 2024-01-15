@@ -95,7 +95,7 @@ export default function Home({ content }: ContentProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const prismic = getPrismicClient();
+  const prismic = getPrismicClient(undefined);
 
   const response = await prismic.query([
     Prismic.Predicates.at("document.type", "home"),
