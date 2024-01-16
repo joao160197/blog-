@@ -46,6 +46,11 @@ button{
     cursor: pointer;
 }
 
+h1,h2,span,time,strong, p{
+  -webkit-user-select:none;
+  user-select: none;
+}
+
 a{
     color: inherit;
     text-decoration: none;
